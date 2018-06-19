@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/cardmargin"
+        android:clickable="true"
+        android:elevation="@dimen/elev"
+        android:focusable="true"
+        android:id="@+id/ll1"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:foregroundGravity="center"
+        card_view:cardCornerRadius="@dimen/card_radius">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Coulomb's Law"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Electric Field Intensity"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Electric Flux Density"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Gauss's Law"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Divergence"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Electric Field And Potential Due To a Point Charge"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Electric Field And Potential Due To a Line Charge Distribution"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Electric Field And Potential Due To a Plane Charge Distribution"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Electric Field And Potential Due To Spherical Charge Distribution"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Effect Of Dielectric Medium"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Capacitance Of Simple Configuration"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Biot-Savart's Law"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Ampere's Law"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Curl"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Faraday's Law"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Lorentz Force"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Inductance"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Magnetomotive Force"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Reluctance"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Reluctance"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Magnetic Circuits"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Self And Mutual Inductance Of Simple Configurations"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

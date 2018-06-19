@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/cardmargin"
+        android:clickable="true"
+        android:elevation="@dimen/elev"
+        android:focusable="true"
+        android:id="@+id/ll1"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:foregroundGravity="center"
+        card_view:cardCornerRadius="@dimen/card_radius">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Vector Spaces"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Basis"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Linear Dependency And Dependency"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Eigen Values And Eigen Vector"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Solutions Of Linear Equation - Exsistence And uniqueness"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Mean Value Theorem"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Theorems of Integral Calculus"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Evaluation Of Definate and Improper Integrals"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Partial Derivative"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Maxima And Minima"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Multiple integrals"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Multiple Integrals"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Line, Surface and Volume Integrals"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="First Order Equations(Linear and Non-Linear)"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Higher Order Linear Differential Equation"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Cauchy's and Euler's equations"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Methods Of Solution Using Variation Of Parameters"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Complementary Function And Particular Integral,"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Partial Differntial Equations"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Variable Separable Method"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Initial And Boundary Value Problems"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Vectors In Plane And Space"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Vector Operations"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Gradient"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Divergence And Curl"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Gauss's, Green's And Stoke's Theorems"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Analytic Functions"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Cauchy's Integral Theorem"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text=" Cauchy's Integral Formula"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Taylor's And Laurent's Series"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Residue Theorem"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Solution Of Nonlinear Equations"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Single And Multi-Step Methods For Differential Equations"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Convergence Criteria"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Mean, Median, Mode And Standard Deviation"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Combinatorial Probability"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Probability Distribution Functions - binomial, Poisson, exponential and normal"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Joint And Conditional Probability"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Correlation and regression analysis"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

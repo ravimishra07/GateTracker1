@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cardmargin">8dp</dimen>
+    <dimen name="elev">4dp</dimen>
+    <dimen name="card_radius">2dp</dimen>
+    <dimen name="tvheight">50dp</dimen>
+    <dimen name="cbpadding">8dp</dimen>
+</resources>

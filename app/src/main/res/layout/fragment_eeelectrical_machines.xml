@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/cardmargin"
+        android:clickable="true"
+        android:elevation="@dimen/elev"
+        android:focusable="true"
+        android:id="@+id/ll1"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:foregroundGravity="center"
+        card_view:cardCornerRadius="@dimen/card_radius">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Single Phase Transformer:-"
+                android:textSize="25dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Equivalent Circuit"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Phasor Diagram"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Open And Short Circuit Test"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Regulation And Efficiency"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Three Phase Transformer:-"
+                android:textSize="25dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Connections"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Parallel Operation"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Auto Transformer"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Electromechanical Energy Conversion Principles"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DC Machines:-"
+                android:textSize="25dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Separately Excited Mode Of Operation And Its Characteristics"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Series And Shunt Mode Of Operation And Its Characteristics"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Motoring And Generating Mode Of Operation And Its Characteristics"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Starting And Speed Control Of Dc Motor"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Three Phase Induction Motors:-"
+                android:textSize="25dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Principle Of Operation"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Types"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Performance"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Torque-Speed Characteristics"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> No load And Blocked Rotor Test"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Equivalent Circuit"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Starting And Speed Control"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Operating Principle Of Single Phase Induction Motor"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Synchronous Machines:-"
+                android:textSize="25dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="-->Cylindrical And Salient Pole Machines"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Performance"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Regulation"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Parallel Operation Of Generators "
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Starting Of Synchronous Motor"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="--> Characteristic"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Typers Of losses"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardmargin"
+                android:clickable="true"
+                android:elevation="@dimen/elev"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundGravity="center"
+                card_view:cardCornerRadius="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:text="Efficiency Of Electric Machines"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
